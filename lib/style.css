@@ -1,7 +1,12 @@
 body {
   text-align: center;
+  background-color: black;
 }
 
 canvas {
-  border: 1px dashed black;
+  width: 800px;
+  height: 550px;
+  margin: 50px auto;
+  border: 1px solid white;
+  background-color: red;
 }
