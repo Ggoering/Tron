@@ -4,9 +4,8 @@ body {
 }
 
 canvas {
-  width: 800px;
-  height: 550px;
+  /*width: 800px;
+  height: 550px;*/
   margin: 50px auto;
-  border: 1px solid white;
-  background-color: red;
+  background-color: #005737;
 }
