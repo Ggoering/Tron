@@ -1,9 +1,47 @@
+@font-face {
+    font-family: Tron;
+    /*src: url('./lib/fonts/TRON.ttf');*/
+}
+
+@keyframes fadeIn {
+    0%   {opacity: 1}
+    50%  {opacity: 0}
+    100% {opacity: 1}
+}
+
 body {
   text-align: center;
   background-color: black;
+  font-family: "Avenir Next", sans-serif;
 }
 
 canvas {
   margin: 50px auto;
   background-color: #050D10;
+}
+
+.start-overlay {
+  color: #FFF;
+  animation: fadeIn 1s infinite;
+}
+
+.header {
+  color: #FFF;
+  font-family: Tron;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+}
+
+.upper-row {
+  display: flex;
+}
+
+.key {
+  width: 30%;
+  color: #FFF;
+  border: 1px solid
 }

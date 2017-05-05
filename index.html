@@ -5,9 +5,63 @@
     <meta charset="utf-8">
     <title>Game Time</title>
 </head>
-
 <body>
+  <section>
+    <h1 class="header">Tron</h1>
+    <section class="start-overlay">
+      <h1 class="start">Press Enter</h1>
+    </section>
+
+    <section class="keyboard">
+        <div class="key emtpy-box"></div>
+        <div class="key">w</div>
+        <div class="key emtpy-box"></div>
+        <div class="key">a</div>
+        <div class="key">s</div>
+        <div class="key">d</div>
+    </section>
+
     <canvas id="game" width="800px" height="550px"></canvas>
+
+    <section class="keyboard">
+        <div class="key emtpy-box"></div>
+        <div class="key">^</div>
+        <div class="key emtpy-box"></div>
+        <div class="key">&lt;</div>
+        <div class="key">v</div>
+        <div class="key">&gt;</div>
+    </section>
+
+    <form class="level">
+
+      <input type="radio" name="level" value="">
+      <input type="radio" name="level" value="">
+      <input type="radio" name="level" value="">
+    </form>
+
+    <form class="speed">
+      <input type="radio" name="speed" value="">
+      <input type="radio" name="speed" value="">
+      <input type="radio" name="speed" value="">
+    </form>
+
+    <form class="color-p1">
+      <selection class="color" name="">
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Yellow">Yellow</option>
+      </selection>
+    </form>
+
+    <form class="color-p2">
+      <selection class="color" name="">
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Yellow">Yellow</option>
+      </selection>
+    </form>
+
+  </section>
     <script src="main.bundle.js"></script>
 </body>
 
