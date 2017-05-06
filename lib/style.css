@@ -21,16 +21,29 @@ body {
   font-family: "Avenir Next", sans-serif;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 canvas {
   margin: 50px auto;
   background-color: #050D10;
 }
 
-#game-container {
+.header {
+  color: #8CE7FB;
+  font-family: Tron;
+  font-size: 50px;
+  margin: 0;
+}
+
+.game-container {
   position: relative;
   /*background-color: orange;*/
-  width: 80%;
-  margin: 0 auto;
+  width: 800px;
+  /*margin: 0 auto;*/
 }
 
 .start-screen {
@@ -69,23 +82,43 @@ canvas {
   color: #FFF;
 }
 
-.header {
-  color: #8CE7FB;
-  font-family: Tron;
-}
+
 
 .keyboard {
   display: flex;
-  flex-wrap: wrap;
-  width: 200px;
+  flex-direction: column;
+  /*flex-wrap: wrap;*/
+  width: 180px;
+  font-family: 'Press Start 2P', cursive;
 }
 
-.upper-row {
+.upper-row,
+.lower-row {
+  width: 100%;
   display: flex;
 }
 
+
 .key {
-  width: 30%;
+  width: 33%;
+  padding: 10px;
+  color: #8CE7FB;
+  border: 1px solid #8CE7FB;
+}
+
+.empty-box {
+  border: 1px solid transparent;
+}
+
+.settings {
   color: #FFF;
-  border: 1px solid
+  font-family: 'Press Start 2P', cursive;
+}
+
+label {
+  color: #FFF;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.difficulty-level {
 }
