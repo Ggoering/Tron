@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
 @font-face {
     font-family: Tron;
-    /*src: url('./lib/fonts/TRON.ttf');*/
+    src: url(./fonts/TRON.ttf);
 }
 
-@keyframes fadeIn {
+@keyframes fadeInText {
     0%   {opacity: 1}
     50%  {opacity: 0}
     100% {opacity: 1}
+}
+
+@keyframes moveBikes {
+  100% {transform: translateX(1000px)};
 }
 
 body {
@@ -20,13 +26,51 @@ canvas {
   background-color: #050D10;
 }
 
-.start-overlay {
+#game-container {
+  position: relative;
+  /*background-color: orange;*/
+  width: 80%;
+  margin: 0 auto;
+}
+
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  /*background-color: red;*/
+  font-family: 'Press Start 2P', cursive;
+  /*font-size: 40px;*/
+}
+
+.bike-container {
   color: #FFF;
-  animation: fadeIn 1s infinite;
+  display: flex;
+  width: 90%;;
+  margin: 0 auto;
+  /*background-color: blue;*/
+  animation: moveBikes 5s infinite linear;
+  transform: translateX(-2000px);
+}
+
+.bike {
+  font-family: 'Tron';
+  margin: 0 auto;
+  font-size: 45px;
+}
+
+.start {
+  animation: fadeInText 1.2s infinite;
+  font-size: 30px;
+  color: #FFF;
 }
 
 .header {
-  color: #FFF;
+  color: #8CE7FB;
   font-family: Tron;
 }
 

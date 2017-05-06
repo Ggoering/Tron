@@ -4,7 +4,9 @@
   "description": "Starter kit for Turing School's front-end module 1 Game Time project",
   "main": "index.js",
   "babel": {
-    "presets": ["env"]
+    "presets": [
+      "env"
+    ]
   },
   "scripts": {
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
@@ -32,6 +34,7 @@
     "mocha-loader": "^1.0.0",
     "node-libs-browser": "^1.0.0",
     "style-loader": "^0.13.1",
+    "url-loader": "^0.5.8",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   }
