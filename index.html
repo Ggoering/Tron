@@ -8,9 +8,6 @@
 <body>
   <section>
     <h1 class="header">Tron</h1>
-    <section class="start-overlay">
-      <h1 class="start">Press Enter</h1>
-    </section>
 
     <section class="keyboard">
         <div class="key emtpy-box"></div>
@@ -21,7 +18,19 @@
         <div class="key">d</div>
     </section>
 
-    <canvas id="game" width="800px" height="550px"></canvas>
+    <section id="game-container">
+      <section class="start-screen">
+        <div class="bike-container">
+          <div id="1" class="bike">|</div>
+          <div id="2" class="bike">|</div>
+          <div id="3" class="bike">|</div>
+          <div id="4" class="bike">|</div>
+        </div>
+        <h1 class="start">Press Enter</h1>
+      </section>
+      <canvas id="game" width="800px" height="550px"></canvas>
+    </section>
+
 
     <section class="keyboard">
         <div class="key emtpy-box"></div>
