@@ -1,77 +1,103 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Game Time</title>
-</head>
-<body>
-  <section>
-    <h1 class="header">Tron</h1>
-
-    <section class="keyboard">
-        <div class="key emtpy-box"></div>
-        <div class="key">w</div>
-        <div class="key emtpy-box"></div>
-        <div class="key">a</div>
-        <div class="key">s</div>
-        <div class="key">d</div>
-    </section>
-
-    <section id="game-container">
-      <section class="start-screen">
-        <div class="bike-container">
-          <div id="1" class="bike">|</div>
-          <div id="2" class="bike">|</div>
-          <div id="3" class="bike">|</div>
-          <div id="4" class="bike">|</div>
+  <head>
+      <meta charset="utf-8">
+      <title>Game Time</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1 class="header">Tron</h1>
+      </header>
+      <main>
+        <section class="keyboard">
+          <div class="upper-row">
+            <div class="key empty-box"></div>
+            <div class="key">w</div>
+            <div class="key empty-box"></div>
+          </div>
+          <div class="lower-row">
+            <div class="key">a</div>
+            <div class="key">s</div>
+            <div class="key">d</div>
+          </div>
+        </section>
+        <section class="game-container">
+          <section class="start-screen">
+            <div class="bike-container">
+              <div id="1" class="bike">|</div>
+              <div id="2" class="bike">|</div>
+              <div id="3" class="bike">|</div>
+              <div id="4" class="bike">|</div>
+            </div>
+            <h1 class="start">Press Enter</h1>
+          </section>
+          <canvas id="game" width="800px" height="550px"></canvas>
+        </section>
+        <section class="keyboard">
+          <div class="upper-row">
+            <div class="key empty-box"></div>
+            <div class="key">&#9650;</div>
+            <div class="key empty-box"></div>
+          </div>
+          <div class="lower-row">
+            <div class="key">&#9668</div>
+            <div class="key"> &#9660;</div>
+            <div class="key">&#9658;</div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <form class="difficulty">
+          <h2 class="settings">Difficulty</h2>
+          <label for="">
+            Easy
+            <input id="easy" class="difficulty-level" type="radio" name="difficulty" value="">
+          </label>
+          <label for="">
+            Normal
+            <input id="normal" class="difficulty-level" type="radio" name="difficulty" value="">
+          </label>
+          <label for="">
+            Hard
+            <input id="hard" class="difficulty-level" type="radio" name="difficulty" value="">
+          </label>
+          <label for="">
+            Legendary
+            <input id="legendary" class="difficulty-level" type="radio" name="difficulty" value="">
+          </label>
+        </form>
+        <form class="speed">
+          <h2 class="settings">Speed</h2>
+          <label for="">
+            Slow
+            <input type="radio" name="speed" value="">
+          </label>
+          <label for="">
+            Normal
+            <input type="radio" name="speed" value="">
+          </label>
+          <label for="">
+            Fast
+            <input type="radio" name="speed" value="">
+          </label>
+        </form>
+        <div class="p1-color">
+          <select class="color" name="">
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Yellow">Yellow</option>
+          </select>
         </div>
-        <h1 class="start">Press Enter</h1>
-      </section>
-      <canvas id="game" width="800px" height="550px"></canvas>
+        <div class="p2-color">
+          <select class="color" name="">
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Yellow">Yellow</option>
+          </select>
+        </div>
+      </footer>
     </section>
-
-
-    <section class="keyboard">
-        <div class="key emtpy-box"></div>
-        <div class="key">^</div>
-        <div class="key emtpy-box"></div>
-        <div class="key">&lt;</div>
-        <div class="key">v</div>
-        <div class="key">&gt;</div>
-    </section>
-
-    <form class="level">
-
-      <input type="radio" name="level" value="">
-      <input type="radio" name="level" value="">
-      <input type="radio" name="level" value="">
-    </form>
-
-    <form class="speed">
-      <input type="radio" name="speed" value="">
-      <input type="radio" name="speed" value="">
-      <input type="radio" name="speed" value="">
-    </form>
-
-    <form class="color-p1">
-      <selection class="color" name="">
-        <option value="Red">Red</option>
-        <option value="Blue">Blue</option>
-        <option value="Yellow">Yellow</option>
-      </selection>
-    </form>
-
-    <form class="color-p2">
-      <selection class="color" name="">
-        <option value="Red">Red</option>
-        <option value="Blue">Blue</option>
-        <option value="Yellow">Yellow</option>
-      </selection>
-    </form>
-
-  </section>
-    <script src="main.bundle.js"></script>
-</body>
-
+      <script src="main.bundle.js"></script>
+  </body>
 </html>
