@@ -57,6 +57,10 @@ canvas {
   margin: 0;
 }
 
+.score {
+  color: #FFF;
+}
+
 .game-container {
   position: relative;
   /*background-color: orange;*/
