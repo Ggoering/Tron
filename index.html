@@ -6,104 +6,94 @@
   </head>
   <body>
       <header>
+        <div class="logo"></div>
         <h1 class="header">Tron</h1>
-        <h2 class="score">p1: <span id="p1-score"></span></h2>
-        <h2 class="score">p2: <span id="p2-score"></span></h2>
       </header>
       <main>
-        <section class="keyboard">
-          <div class="upper-row">
-            <div class="key empty-box"></div>
-            <div class="key">w</div>
-            <div class="key empty-box"></div>
-          </div>
-          <div class="lower-row">
-            <div class="key">a</div>
-            <div class="key">s</div>
-            <div class="key">d</div>
-          </div>
-        </section>
         <section class="game-container">
-          <div id="count-down" class="count-down toggle">3</div>
-          <div id="game-over" class="game-over"><span id="player-winner"></span>Defeated!</br>
-            [SPACEBAR] to play again.
-          </div>
-          <section class="start-screen">
-            <div class="bike-container">
-              <div id="1" class="bike">|</div>
-              <div id="2" class="bike">|</div>
-              <div id="3" class="bike">|</div>
-              <div id="4" class="bike">|</div>
-            </div>
-            <h1 class="start">Press Enter</h1>
+          <section class="scores">
+            <h3 class="score">P1: <span id="p1-score"></span></h3>
+            <h3 class="score">P2: <span id="p2-score"></span></h3>
           </section>
-          <canvas id="game" width="600px" height="550px"></canvas>
-        </section>
-        <section class="keyboard">
-          <div class="upper-row">
-            <div class="key empty-box"></div>
-            <div class="key">&#9650;</div>
-            <div class="key empty-box"></div>
-          </div>
-          <div class="lower-row">
-            <div class="key">&#9668</div>
-            <div class="key"> &#9660;</div>
-            <div class="key">&#9658;</div>
-          </div>
+          <section class="start-container">
+            <div id="count-down" class="count-down toggle">3</div>
+            <div id="game-over" class="game-over"><span id="player-winner"></span>Defeated!</br>
+              press [SPACEBAR] <br> to play again.
+            </div>
+            <section class="start-screen">
+              <h1 class="start">Press Enter</h1>
+            </section>
+          </section>
+          <canvas id="game" width="500px" height="500px"></canvas>
+          <section class="instructions">
+            <section class="settings-container">
+              <form class="settings">
+                <h3 class="settings-title">Difficulty</h3>
+                <label class="settings-label" for="">
+                  <input id="easy" class="settings-level" type="radio" name="difficulty" value="easy" checked="checked">
+                  Easy
+                </label>
+                <label class="settings-label" for="">
+                  <input id="normal" class="settings-level" type="radio" name="difficulty" value="normal">
+                  Normal
+                </label>
+                <label class="settings-label" for="">
+                  <input id="hard" class="settings-level" type="radio" name="difficulty" value="hard">
+                  Hard
+                </label>
+                <label class="settings-label" for="">
+                  <input id="legendary" class="settings-level" type="radio" name="difficulty" value="legendary">
+                  Legendary
+                </label>
+              </form>
+              <form class="settings">
+                <h3 class="settings-title">Speed</h3>
+                <label class="settings-label" for="">
+                  <input class="settings-level" type="radio" name="speed" value="2">
+                  Slow
+                </label>
+                <label class="settings-label" for="">
+                  <input class="settings-level" type="radio" name="speed" value="3" checked="checked">
+                  Normal
+                </label>
+                <label class="settings-label" for="">
+                  <input class="settings-level" type="radio" name="speed" value="6">
+                  Fast
+                </label>
+              </form>
+            </section>
+            <section class="player-info">
+              <div class="p1">
+                <h3 class="player-title">Player 1</h3>
+                <p class="color-instruction">Choose Color</p>
+                <div class="p1-color">
+                  <select class="select-color" name="p1-color">
+                    <option value="#FF6663">Red</option>
+                    <option value="#00bcff">Blue</option>
+                    <option value="#00ffba">Green</option>
+                    <option value="#ccff00">Yellow</option>
+                  </select>
+                </div>
+                <div class="p1-keyboard"></div>
+              </div>
+              <div class="p2">
+                <h3 class="player-title">Player 2</h3>
+                <p class="color-instruction">Choose Color</p>
+                <div class="p2-color">
+                  <select class="select-color" name="p2-color">
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                  </select>
+                </div>
+                <div class="p2-keyboard"></div>
+              </div>
+            </section>
+          </section>
         </section>
       </main>
-      <footer>
-        <form class="difficulty">
-          <h2 class="settings">Difficulty</h2>
-          <label for="">
-            Easy
-            <input id="easy" class="difficulty-level" type="radio" name="difficulty" value="easy" checked="checked">
-          </label>
-          <label for="">
-            Normal
-            <input id="normal" class="difficulty-level" type="radio" name="difficulty" value="normal">
-          </label>
-          <label for="">
-            Hard
-            <input id="hard" class="difficulty-level" type="radio" name="difficulty" value="hard">
-          </label>
-          <label for="">
-            Legendary
-            <input id="legendary" class="difficulty-level" type="radio" name="difficulty" value="legendary">
-          </label>
-        </form>
-        <form class="speed">
-          <h2 class="settings">Speed</h2>
-          <label for="">
-            Slow
-            <input type="radio" name="speed" value="2">
-          </label>
-          <label for="">
-            Normal
-            <input type="radio" name="speed" value="3" checked="checked">
-          </label>
-          <label for="">
-            Fast
-            <input type="radio" name="speed" value="6">
-          </label>
-        </form>
-        <div class="p1-color">
-          <select class="color" name="p1-color">
-            <option value="#FF6663">Red</option>
-            <option value="#00bcff">Blue</option>
-            <option value="#00ffba">Green</option>
-            <option value="#ccff00">Yellow</option>
-          </select>
-        </div>
-        <div class="p2-color">
-          <select class="color" name="p2-color">
-            <option value="blue">Blue</option>
-            <option value="red">Red</option>
-            <option value="green">Green</option>
-            <option value="yellow">Yellow</option>
-          </select>
-        </div>
-      </footer>
+      <footer class="footer"></footer>
       <script src="main.bundle.js"></script>
       <script src="/lib/game-test.js"></script>
   </body>
