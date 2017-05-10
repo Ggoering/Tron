@@ -38,7 +38,6 @@ main {
 }
 
 canvas {
-  /*margin: 50px auto;*/
   background-color: #050D10;
   border: 1px dashed #fff;
   margin-right: 10px;
@@ -53,7 +52,6 @@ canvas {
 
 .scores {
   width: 50%;
-  /*background-color: red;*/
   display: flex;
   justify-content: space-around;
   position: absolute;
@@ -78,9 +76,6 @@ canvas {
 .game-container {
   display: flex;
   position: relative;
-  /*background-color: orange;*/
-  /*width: 600px;*/
-  /*margin: 0 auto;*/
 }
 
 .start-container {
@@ -98,9 +93,7 @@ canvas {
   height: 100%;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.8);
-  /*background-color: red;*/
   font-family: 'Press Start 2P', cursive;
-  /*font-size: 40px;*/
 }
 
 
@@ -157,7 +150,7 @@ canvas {
 }
 
 .p1-keyboard {
-  background-image: url(./game/assets/p1_keyboard.png);
+  background-image: url(./game/assets/p2_keyboard.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -166,7 +159,7 @@ canvas {
 }
 
 .p2-keyboard {
-  background-image: url(./game/assets/p2_keyboard.png);
+  background-image: url(./game/assets/p1_keyboard.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
