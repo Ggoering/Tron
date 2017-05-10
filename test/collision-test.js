@@ -164,7 +164,7 @@ describe('Collision other Player', () => {
     game.player1.victoryText = function(player) {
       return player;
     }
-    
+
     game.player2.collisionPlayer(game, game.player1);
     expect(game.score.p1).to.equal(1);
   })
