@@ -60,8 +60,19 @@ canvas {
   font-family: 'Press Start 2P', cursive;
 }
 
-.score {
+.score,
+.turbo {
   color: #FFF;
+}
+
+.turbo-container {
+  width: 50%;
+  /*background-color: red;*/
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .game-container {
