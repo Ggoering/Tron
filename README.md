@@ -29,10 +29,10 @@ You can change the speed and difficulty of the game environment each round.
 
 ### Difficulty Environments
 
-**Easy:** Grid size is 80% of the canvas
-**Normal:** Grid size is 70% of the canvas
-**Hard:** Grid size is 60% of the canvas
-**Legendary:** Grid size is 30% of the canvas
+* **Easy:** Grid size is 80% of the canvas
+* **Normal:** Grid size is 70% of the canvas
+* **Hard:** Grid size is 60% of the canvas
+* **Legendary:** Grid size is 30% of the canvas
 
 ### Speed
 * **Slow**
